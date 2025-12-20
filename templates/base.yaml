@@ -24,11 +24,15 @@ proxy-groups:
     type: select
     proxies:
       - 🚀 节点选择
-      - DIRECT
-
+      - DIRECT   
+  - name: Ads
+    type: select
+    proxies:
+      - Reject
 rules:
   - DOMAIN-SUFFIX,google.com,🚀 节点选择
   - DOMAIN-KEYWORD,github,🚀 节点选择
   - GEOIP,CN,DIRECT
 
   - MATCH,🐟 漏网之鱼
+
